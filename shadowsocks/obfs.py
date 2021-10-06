@@ -14,24 +14,17 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from __future__ import absolute_import, division, print_function, with_statement
+from __future__ import absolute_import, division, print_function, \
+    with_statement
 
-import hashlib
-import logging
 import os
 import sys
+import hashlib
+import logging
 
 from shadowsocks import common
-from shadowsocks.obfsplugin import (
-    auth,
-    auth_chain,
-    http_simple,
-    obfs_tls,
-    plain,
-    simple_obfs_http,
-    simple_obfs_tls,
-    verify,
-)
+from shadowsocks.obfsplugin import plain, http_simple, obfs_tls, verify, auth, auth_chain, simple_obfs_http, simple_obfs_tls
+
 
 method_supported = {}
 method_supported.update(plain.obfs_map)
@@ -42,6 +35,7 @@ method_supported.update(auth.obfs_map)
 method_supported.update(auth_chain.obfs_map)
 method_supported.update(simple_obfs_http.obfs_map)
 method_supported.update(simple_obfs_tls.obfs_map)
+
 
 class server_info(object):
 

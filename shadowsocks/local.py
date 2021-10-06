@@ -15,12 +15,13 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from __future__ import absolute_import, division, print_function, with_statement
+from __future__ import absolute_import, division, print_function, \
+    with_statement
 
-import logging
-import os
-import signal
 import sys
+import os
+import logging
+import signal
 
 if __name__ == '__main__':
     import inspect

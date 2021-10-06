@@ -15,19 +15,22 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from __future__ import absolute_import, division, print_function, with_statement
+from __future__ import absolute_import, division, print_function, \
+    with_statement
 
-import collections
 import errno
-import json
-import logging
-import socket
 import traceback
+import socket
+import logging
+import json
+import collections
 
-from shadowsocks import asyncdns, common, eventloop, shell, tcprelay, udprelay
+from shadowsocks import common, eventloop, tcprelay, udprelay, asyncdns, shell
+
 
 BUF_SIZE = 1506
 STAT_SEND_LIMIT = 50
+
 
 class Manager(object):
 

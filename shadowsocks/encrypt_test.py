@@ -1,11 +1,17 @@
-from __future__ import absolute_import, division, print_function, with_statement
+from __future__ import absolute_import, division, print_function, \
+    with_statement
 
-import os
 import sys
+import os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../'))
 
-from shadowsocks.crypto import openssl, rc4_md5, sodium, table
+
+from shadowsocks.crypto import rc4_md5
+from shadowsocks.crypto import openssl
+from shadowsocks.crypto import sodium
+from shadowsocks.crypto import table
+
 
 def run(func):
     try:

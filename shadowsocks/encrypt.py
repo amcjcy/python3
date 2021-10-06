@@ -14,15 +14,17 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from __future__ import absolute_import, division, print_function, with_statement
+from __future__ import absolute_import, division, print_function, \
+    with_statement
 
-import hashlib
-import logging
 import os
 import sys
+import hashlib
+import logging
 
 from shadowsocks import common
-from shadowsocks.crypto import openssl, rc4_md5, sodium, table
+from shadowsocks.crypto import rc4_md5, openssl, sodium, table
+
 
 CIPHER_ENC_ENCRYPTION = 1
 CIPHER_ENC_DECRYPTION = 0
