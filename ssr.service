@@ -10,6 +10,5 @@ ExecStart=/usr/bin/nohup /usr/bin/python3 /root/shadowsocks/server.py m>> /root/
 ExecStop=/usr/bin/bash /root/shadowsocks/stop.sh
 Restart=always
 LimitNOFILE=512000
-
 [Install]
 WantedBy=multi-user.target
